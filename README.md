@@ -51,7 +51,7 @@ The mock data used is as follows:
 ### 1. Fetch and Process Data
 - **Endpoint**: `/fetch-data`
 - **Method**: `GET`
-- **Description**: Simulates fetching data from an external service, processes the data and stores it in memory.
+- **Description**: Simulates fetching data from an external service, processes the data, and stores it in memory. Data processing includes converting the name of the items into uppercase, calculating the total cart value, and the total number of items in the cart.
 - **Response Example**:
 
     ```json
@@ -60,7 +60,7 @@ The mock data used is as follows:
     }
     ```
 
-If an error occured while processing the data, the response will be:
+If an error occurs while processing the data, the response will be:
 
 ```json
     {
