@@ -37,7 +37,7 @@ This Flask application simulates a simplified data retrieval and processing syst
 
 The mock data used is as follows:
     
-    ```json
+```python
     {
         'cart' : [
             { 'id' : 101, 'name' : 'Apple iPhone 15 Pro', 'price' : 137600 },
@@ -46,7 +46,7 @@ The mock data used is as follows:
             { 'id' : 104, 'name' : 'Apple iPhone 15 Pro Clear Case with MagSafe', 'price' : 4900 }
         ],
     }
-    ```
+```
 
 ### 1. Fetch and Process Data
 - **Endpoint**: `/fetch-data`
@@ -62,11 +62,11 @@ The mock data used is as follows:
 
 If an error occured while processing the data, the response will be:
 
-    ```json
+```json
     {
         "message": "Error processing data"
     }
-    ```
+```
 
 ### 2. Retrieve Processed Data
 - **Endpoint**: `/get-processed-data`
@@ -74,7 +74,7 @@ If an error occured while processing the data, the response will be:
 - **Description**: Retrieves the processed data stored in memory.
 - **Response Example**:
 
-    ```json
+```json
     {
         "processed_data": {
             "cart": {
@@ -105,12 +105,12 @@ If an error occured while processing the data, the response will be:
             }
         }
     }
-    ```
+```
 
 If no processed data is available, the response will be:
 
-    ```json
+```json
     {
       "message": "No processed data available"
     }
-    ```
+```
